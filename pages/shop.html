@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shop - BBB</title>
+        <link rel="stylesheet" href="../css/style-shop.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="../JS/script.js"></script>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <!-- This is my navigation bar -->
+        <div id="nav">
+            <div id="logo-container"> 
+               <div id="logo">
+                    <a href="../index.html">
+                        B
+                    </a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/products.html">menu</a></li>
+                <li class="active"><a href="../pages/shop.html">shop</a></li>
+                <li><a>catering</a></li>
+                <li><a>contact</a></li>
+                <li><a><img src="../images/icons/cart.png" id="cart-icon" class="cart_anchor"></a></li>
+            </ul>
+            
+            <!-- sliding shopping cart -->
+            <div id="side-cart" class="close-cart">
+                <div id="item-container">
+                </div>
+                <div id="cart-total">
+                    <h2>Total</h2>
+                    <div id="cart-total-value">$0</div>
+                    <div id="checkout"><a href="#">Checkout Now!</a></div>
+                    <div id="clear-cart"><a href="#">clear cart</a></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- This is the banner on the main page -->
+        <img id="home-banner" src="../images/home/home.jpg">
+        <h1>Select Quantity</h1>
+        <h6>Choose between single, 6 and 12</h6>
+        <a href="products.html" id="a-banner-button">
+            <div id="banner-button">
+                <h3>Bakery Menu</h3>
+                <img src="../images/home/chevron.png">
+            </div>
+        </a>
+        
+    <!-- This is the content on the main page -->
+        <!-- Featured Items -->
+        <article>
+            <div class="featured-container">
+                <!-- Image in featured items -->
+                <div class="featured-img">
+                    <img src="../images/shop/bordered/single.png">
+                </div>
+                <!-- The heading of that section -->
+                <div class="featured-heading">
+                    <h2>Single</h2>
+                </div>
+                <!-- The button that navigates to the page -->
+                <a href="shop-single.html">
+                    <div class="featured-button">
+                        <h3>Select Flavors</h3>
+                         <img src="../images/home/chevron.png">
+                    </div>
+                </a>
+            </div>
+            <div class="featured-container">
+                <!-- Image in featured items -->
+                <div class="featured-img">
+                    <img src="../images/shop/bordered/6pack.png">
+                </div>
+                <!-- The heading of that section -->
+                <div class="featured-heading">
+                    <h2>6 Pack</h2>
+                </div>
+                <!-- The button that navigates to the page -->
+                <a href="shop-6pack.html">
+                    <div class="featured-button">
+                        <h3>Select Flavors</h3>
+                         <img src="../images/home/chevron.png">
+                    </div>
+                </a>
+            </div>
+            <div class="featured-container">
+                <!-- Image in featured items -->
+                <div class="featured-img">
+                    <img src="../images/shop/bordered/12pack.png">
+                </div>
+                <!-- The heading of that section -->
+                <div class="featured-heading">
+                    <h2>12 Pack</h2>
+                </div>
+                <!-- The button that navigates to the page -->
+                <a href="shop-12pack.html">
+                    <div class="featured-button">
+                        <h3>Select Flavors</h3>
+                         <img src="../images/home/chevron.png">
+                    </div>
+                </a>
+            </div>
+        </article>
+<!-- Footer content -->
+        <!-- Social Media -->
+        <div id="social-media">
+            <h2>Connect with the Bun Bun Bake Shoppe</h2>
+            <ul>
+                <li><img src="../images/icons/facebook.png"></li>
+                <li><img src="../images/icons/instagram.png"></li>
+                <li><img src="../images/icons/twitter.png"></li>
+                <li><img src="../images/icons/pinterest.png"></li>
+            </ul>
+        </div>
+        <!-- Copyright -->
+        <div id="copyright">
+            <h4>© 2017 Zeeshan Rizvi LLC. All rights reserved.</h4>
+            <div>
+                <p>
+                    <em>LEGAL</em> | <em>PRIVACY POLICY</em> | <em>ANIMAL WELFARE</em> | <em>SITE MAP</em>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

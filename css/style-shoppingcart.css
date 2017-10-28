@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+
+/***********************************************/
+/** Changing all default settings in CSS to 0**/
+/** Code has been adapted from reset.css, but has \
+been changed to only apply to html tags that I have used in my website. **/
+/***********************************************/
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, em, img, ol, ul, li, article, footer, h{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details,section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+/***********************************************/
+/***********************************************/
+/***********************************************/
+
+/** Formatting SIDE CART **/
+#side-cart {
+    height: 656px;
+    width: 0px;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    right: 0px;
+    background-color: #fdf7f1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-left: 1px solid #523428;
+/*    padding-top: 60px;*/
+}
+
+.item {
+    height: 85px;
+    width: 340px;
+    background: #fdf7f1;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: #523428 dashed 4px;
+    float: left;
+}
+
+img#thumb-image {
+    width: 80px;
+    height: 80px;
+    float: left;
+    border-radius: 50%;
+    border: solid 3px #ed3981;
+}
+
+.size {
+    line-height: 20px;
+    font-size: 20px;
+    color: #28a5cc;
+    margin: 0;
+    font-family: "Cookie";
+    margin-left: 5px;
+    width: 160px;
+    float: left;   
+}
+
+#item-container{
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+}
+
+#cart-total {
+    width: 340px;
+    margin: 10px 0;
+    height: 50px;
+    border-top: solid 5px #555;
+    font-size: 40px;
+    color: #555;
+    font-family: "Cookie";
+    border-bottom: double 10px #555;
+    clear: both;
+    position: absolute;
+    bottom: 50px;
+}
+
+#cart-total h2 {
+    padding-top: 8px;
+    width: 246px;
+    text-align: left;
+    float: left;
+}
+
+#cart-total-value {
+    width: 89px;
+    height: 50px;
+    float: right;
+    text-align: center;
+    font-family: "Cookie";
+    color: #555;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+#checkout {
+    height: 20px;
+    background: #5b7;
+    border-radius: 25px;
+    width: 50%;
+    float: left;
+    font-family: "Cookie";
+    font-size: 22px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 27px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px; 
+}
+
+#checkout:hover {
+    background: #8fa;
+    color: #000;
+}
+
+#checkout a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+#clear-cart {
+    height: 14px;
+    border-radius: 25px;
+    width: 50%;
+    float: right;
+    text-align: right;
+    font-family: "Helvetica";
+    font-size: 14px;
+    padding-top: 13px;
+    padding-bottom: 8px;
+    margin-top: 11px;
+}
+
+#clear-cart a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#clear-cart a:hover {
+    color: rgb(221,0,0);
+}
+
+#price {
+    width: 89px;
+    height: 50px;
+    float: right;
+    text-align: center;
+    font-family: "Cookie";
+    color: #28a5cc;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.fla1{
+    font-family: "Helvetica";
+    margin-left: 5px;
+    color: #555;
+    font-size: 14px;
+    line-height: 20px;
+    width: 160px;
+    float: left
+}
+
+.fla2 {
+    font-family: "Helvetica";
+    margin-left: 5px;
+    color: #555;
+    font-size: 14px;
+    line-height: 20px;
+    width: 160px;
+    float: left;
+}
+
+.fla3 {
+    font-family: "Helvetica";
+    margin-left: 5px;
+    color: #555;
+    font-size: 14px;
+    line-height: 20px;
+    width: 160px;
+    float: left;
+}
+
+.item-remove {
+    width: 89px;
+    float: right;
+    line-height: 20px;
+    font-family: "Helvetica";
+    color: darkblue;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}

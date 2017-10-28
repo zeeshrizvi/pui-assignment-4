@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css?family=Cookie');
+
+/***********************************************/
+/** Changing all default settings in CSS to 0**/
+/** Code has been adapted from reset.css, but has \
+been changed to only apply to html tags that I have used in my website. **/
+/***********************************************/
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, pre, a, em, img, ol, ul, li, article, footer, h{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details,section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+/***********************************************/
+/***********************************************/
+/***********************************************/
+
+body {
+    background: #fdf7f1;
+    height: 800px;
+}
+
+/** Formatiing the navigation bar **/
+#nav {
+    width: 100%;
+    background: #ffbdbd;
+    height: 100px;
+}
+
+#logo-container {
+    width: 40%;
+    height: 100px;
+    background: #ffbdbd;
+    float: left;
+}
+
+#logo-container #logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logo {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background: #fcf;
+    margin-top: 10px;
+    margin-left: 5%;
+    border: solid 5px #fff;
+    color: #28a5cc;
+    text-align: center;
+    font-family: "Cookie";
+    font-size: 85px;
+}
+
+#nav ul {
+    width: 60%;
+    float: left;
+    height: 100px;
+    text-align: right;
+}
+
+#nav ul li {
+    display: inline-block;
+    font-family: "Helvetica";
+    margin-right: 20px;
+    color: #28a5cc;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 40px;
+}
+
+#nav ul li:last-child {
+    margin-right: 5%;
+}
+
+#nav ul li.active {
+    color: #555;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    font-family: inherit;
+    color: inherit;
+}
+
+#nav ul li a:hover {
+    color: #555;
+}
+
+#nav ul li a img {
+    height: 20px;
+}
+
+#shopping-cart {
+    width: calc(5% - 2px);
+    float: left;
+    border-left: 2px solid #555;
+    height: 65px;
+    text-align: center;
+    padding-top: 35px;
+}
+
+#shopping-cart img{
+    width: 30px;
+    height: auto;
+}
+
+/** Formatiing the banner on the home screen **/
+img#home-banner {
+    width: 100%;
+    height: 535px;
+    position: absolute;
+}
+
+h1 {
+    font-family: "Cookie";
+    color: #fff;
+    background: #ed3981;
+    font-size: 80px;
+    position: relative;
+    line-height: 90px;
+    margin-top: 50px;
+    margin-left: 5%;
+    width: 553px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+h6 {
+    font-family: "Helvetica";
+    background: #fdf7f1;
+    color: #ed3981;
+    font-size: 14px;
+    position: relative;
+    line-height: 30px;
+    width: 250px;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 5%;
+    padding-left: 15px;
+}
+
+a#a-banner-button {
+    text-decoration: none;
+}
+
+div#banner-button {
+    margin-top: 230px;
+    margin-left: 5%;
+    height: 60px;
+    width: 181px;
+    background: rgb(35,45,81);
+    position: relative;
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+div#banner-button h3 {
+    width: 121px;
+    font-family: "Cookie";
+    color: #fff;
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+    float: left;
+    margin-left: 10px;
+}
+ 
+div#banner-button img {
+    width: 20px;
+    float: right;
+    height: 32px;
+    margin-top: 14px;
+    margin-right: 10px;
+}
+
+
+/** Formatiing the content on the home screen **/
+img#bun-banner {
+    width: 740px;
+    margin-left: calc(50% - 370px);
+    margin-top: 70px;
+}
+
+#news {
+    width: 80%;
+    margin-left: 10%;
+    height: 120px;
+    background: #fdf7f1;
+    border-bottom: 7px solid #ed3981;
+    text-align: center;
+}
+
+h1#news-header {
+    font-family: "Cookie";
+    color: #ed3981;
+    font-size: 80px;
+    position: relative;
+    line-height: 90px;
+    width: 100%;
+    margin: 0;
+    background: #fdf7f1;
+    padding: 0;
+    margin-top: 15px;
+}
+
+/** Formatiing the featured items on the home screen **/
+article {
+    margin-top: 50px;
+    width: 1092px;
+    margin-left: calc(50% - 546px);
+    height: 546px;
+    box-sizing: border-box;
+}
+
+article div#six-pack {
+    width: 700px;
+    height: 546px;
+    float: left;
+}
+
+h3 {
+    width: 100%;
+    line-height: 50px;
+    font-size: 40px;
+    color: #28a5cc;
+    margin: 0;
+    font-family: "Cookie";
+}
+
+img#qty {
+    width: 700px;
+    height: 476px;
+    border: solid 10px #ed3981;
+}
+
+#flavors {
+    width: 352px;
+    float: right;
+    height: 546px;
+}
+
+#flavor-heading{
+    font-size: 40px;
+    color: #28a5cc;
+    font-family: "Cookie";
+    border-bottom: solid 5px #555;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    text-align: left;
+    margin-top: 32px;
+    
+}
+.choose-bun {
+    width: 100%;
+    height: 90px;
+    margin-bottom: 10px;
+}
+
+.choose-bun img {
+    width: 84px;
+    height: 74px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+
+.select {
+  font-size: 16px;
+  position: relative;
+  display: inline-block;
+  margin-top: 7px;
+    
+}
+
+.select select {
+  outline: none;
+  -webkit-appearance: none;
+  display: block;
+  padding: 1.2em 3em 1.3em 1.5em;
+  margin: 0;
+  margin-top: 7px;
+  margin-left: 20px;
+  transition: border-color 0.2s;
+  border: 5px solid #EB5168;
+  border-radius: 5px;
+
+  background: #fff;
+  color: #555;
+  line-height: normal;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.select .arr {
+  background: #fff;
+  bottom: 5px;
+  position: absolute;
+  right: 5px;
+  top: 15px;
+  width: 50px;
+  pointer-events: none;
+}
+.select .arr:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 24px;
+  margin-top: -5px;
+  pointer-events: none;
+  border-top: 10px solid #EB5168;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.select .arr:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 28px;
+  margin-top: -5px;
+  pointer-events: none;
+  border-top: 6px solid #fff;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+#total {
+    width: 100%;
+    height: 50px;
+    border-top: solid 5px #555;
+    font-size: 40px;
+    color: #28a5cc;
+    font-family: "Cookie";
+}
+
+#total h2 {
+    padding-top: 8px;
+    width: 60%;
+    text-align: left;
+    float: left
+}
+
+#total-value {
+    padding-top: 8px;
+    width: 40%;
+    text-align: right;
+    float: right;
+}
+
+a#a-total-button {
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+button#total-button {
+    margin-left: 61px;
+    height: 60px;
+    width: 250px;
+    background: rgb(35,45,81);
+    position: relative;
+    border-radius: 25px;
+    box-sizing: border-box;
+    margin-top: 25px;
+}
+
+button:focus {
+    outline:0;
+}
+
+button#total-button h3 {
+    width: 121px;
+    font-family: "Cookie";
+    color: #fff;
+    font-size: 30px;
+    line-height: 30px;
+    margin-top: 8px;
+    float: left;
+    margin-left: 10px;
+}
+ 
+button#total-button img {
+    width: 30px;
+    float: right;
+    height: 32px;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+
+/** Formatting SIDE CART **/
+#side-cart {
+    height: 656px;
+    width: 0px;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    right: 0px;
+    background-color: #fdf7f1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-left: 1px solid #523428;
+/*    padding-top: 60px;*/
+}
+
+.item {
+    height: 85px;
+    width: 340px;
+    background: #fdf7f1;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: #523428 dashed 4px;
+    float: left;
+}
+
+img#thumb-image {
+    width: 80px;
+    height: 80px;
+    float: left;
+    border-radius: 50%;
+    border: solid 3px #ed3981;
+}
+
+.size {
+    line-height: 20px;
+    font-size: 20px;
+    color: #28a5cc;
+    margin: 0;
+    font-family: "Cookie";
+    margin-left: 5px;
+    width: 160px;
+    float: left;   
+}
+
+#item-container{
+    width: 100%;
+    height: 500px;
+    overflow: scroll;
+}
+
+#cart-total {
+    width: 340px;
+    margin: 10px 0;
+    height: 50px;
+    border-top: solid 5px #555;
+    font-size: 40px;
+    color: #555;
+    font-family: "Cookie";
+    border-bottom: double 10px #555;
+    clear: both;
+    position: absolute;
+    bottom: 50px;
+}
+
+#cart-total h2 {
+    padding-top: 8px;
+    width: 246px;
+    text-align: left;
+    float: left;
+}
+
+#cart-total-value {
+    width: 89px;
+    height: 50px;
+    float: right;
+    text-align: center;
+    font-family: "Cookie";
+    color: #555;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+#checkout {
+    height: 20px;
+    background: #5b7;
+    border-radius: 25px;
+    width: 50%;
+    float: left;
+    font-family: "Cookie";
+    font-size: 22px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 27px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px; 
+}
+
+#checkout:hover {
+    background: #8fa;
+    color: #000;
+}
+
+#checkout a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration: none;
+}
+
+#clear-cart {
+    height: 14px;
+    border-radius: 25px;
+    width: 50%;
+    float: right;
+    text-align: right;
+    font-family: "Helvetica";
+    font-size: 14px;
+    padding-top: 13px;
+    padding-bottom: 8px;
+    margin-top: 11px;
+}
+
+#clear-cart a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#clear-cart a:hover {
+    color: rgb(221,0,0);
+}
+
+#price {
+    width: 89px;
+    height: 50px;
+    float: right;
+    text-align: center;
+    font-family: "Cookie";
+    color: #28a5cc;
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.fla1{
+    font-family: "Helvetica";
+    margin-left: 5px;
+    color: #555;
+    font-size: 14px;
+    line-height: 20px;
+    width: 160px;
+    float: left
+}
+
+.fla2 {
+    font-family: "Helvetica";
+    margin-left: 5px;
+    color: #555;
+    font-size: 14px;
+    line-height: 20px;
+    width: 160px;
+    float: left;
+}
+
+.fla3 {
+    font-family: "Helvetica";
+    margin-left: 5px;
+    color: #555;
+    font-size: 14px;
+    line-height: 20px;
+    width: 160px;
+    float: left;
+}
+
+.item-remove {
+    width: 89px;
+    float: right;
+    line-height: 20px;
+    font-family: "Helvetica";
+    color: darkblue;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/************/
+/** FOOTER **/
+/************/
+
+/**Social Media**/
+div#social-media {
+    margin-top: 60px;
+    width: 100%;
+    height: 120px;
+    background: #ddeeff;
+    box-sizing: border-box;
+
+}
+
+div#social-media h2 {
+    font-family: "Cookie";
+    color: #fca311;
+    font-size: 40px;
+    line-height: 32px;
+    padding-top: 40px;
+    margin-left: 10%;
+}
+
+div#social-media ul {
+    width: 90%;
+    height: 50px;
+    padding-left: 10%;
+    margin-top: 20px;
+}
+
+div#social-media ul li {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+div#social-media ul li img {
+    width: 54px;
+    height: 54px;
+}
+
+/**copyright**/
+#copyright {
+    width: 100%;
+    border-top: 7px solid rgba(82,52,40,.5);
+    height: 80px;
+    font-family: "Helvetica";
+    font-size: 12px;
+    color: #523428;
+}
+
+#copyright h4 {
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+    line-height: 80px;
+}
+
+#copyright div {
+    width: 40%;
+    float: right;
+    margin-right: 10%;
+    line-height: 80px;
+    text-align: right;
+}
+
+em {
+    font-weight: 800;
+}

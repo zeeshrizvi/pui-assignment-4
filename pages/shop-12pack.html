@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shop - BBB</title>
+        <link rel="stylesheet" href="../css/style-12pack.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="../JS/script.js"></script>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <!-- This is my navigation bar -->
+        <div id="nav">
+            <div id="logo-container"> 
+               <div id="logo">
+                    <a href="../index.html">
+                        B
+                    </a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../pages/products.html">menu</a></li>
+                <li class="active"><a href="../pages/shop.html">shop</a></li>
+                <li><a>catering</a></li>
+                <li><a>contact</a></li>
+                <li><a><img src="../images/icons/cart.png" id="cart-icon" class="cart_anchor"></a></li>
+            </ul>
+            
+            <!-- sliding shopping cart -->
+            <div id="side-cart" class="close-cart">
+                <div id="item-container">
+                </div>
+                <div id="cart-total">
+                    <h2>Total</h2>
+                    <div id="cart-total-value">$0</div>
+                    <div id="checkout"><a href="#">Checkout Now!</a></div>
+                    <div id="clear-cart"><a href="#">clear cart</a></div>
+                </div>
+            </div>
+
+        </div>  
+        
+    <!-- This is the content on the main page -->
+        <!-- Featured Items -->
+        <article id="main-content">
+            <div id="six-pack">
+                <h3>Make Your Own 12 Pack!</h3>
+                
+<!--                /*** will not display h3 for size this, but will use it to dynamically change selections in jquery ****/-->
+                <h3 id="size" style="display:none;">12 Pack</h3>
+                
+                <img id="qty" src="../images/shop/square/12pack.jpg">
+            </div>  
+            <!-- This is the left part of the screen with the total cost-->
+            <div id="flavors">
+                <div id="flavor-heading">Select Flavor</div>
+                <!-- this lets you select your flavor -->
+                <div class="choose-bun">
+                    <img name="imageToSwap1" src="../images/icons/bun.png">
+                    <div class="select">
+                        <span class="arr"></span>
+                        <select id="bun-select1">
+                            <option value="../images/icon/bun.png">Select flavor...</option>
+                            <option value="../images/bun-graphics/mapleapple.png"> Maple Apple Pecan</option>
+                            <option value="../images/bun-graphics/walnuts.png">Walnut Bun</option>
+                            <option value="../images/bun-graphics/pumpkin.png">Pumpkin Spice</option>
+                            <option value="../images/bun-graphics/cranberry.png">Cranberry Bun</option>
+                            <option value="../images/bun-graphics/blackberry.png">Blackberry Bun</option>
+                            <option value="../images/bun-graphics/original.png">Original</option>
+                            <option value="../images/bun-graphics/glutenfree.png">Original (GF)</option>
+                            <option value="../images/bun-graphics/vegan.png">Original (V)</option>
+                            <option value="../images/bun-graphics/bacon.png">Bacon Roll</option>
+                            <option value="../images/bun-graphics/pecan.png">Caramel Pecan</option>
+                            <option value="../images/bun-graphics/strawberry.png">Strawberry Rhubarb</option>
+                            <option value="../images/bun-graphics/birthday.png">Birthday Cake</option>
+                            <option value="../images/bun-graphics/lemon.png">Lemon Tart</option>
+                            <option value="../images/bun-graphics/oldfashioned.png">Oldfashioned Buttermilk</option>
+                            <option value="../images/bun-graphics/carrots.png">Carrot Cake</option>
+                        </select>
+                    </div> 
+                </div>
+                <div class="choose-bun">
+                    <img name="imageToSwap2" src="../images/icons/bun.png">
+                    <div class="select">
+                        <span class="arr"></span>
+                        <select id="bun-select2">
+                            <option value="../images/icon/bun.png">Select flavor...</option>
+                            <option value="../images/bun-graphics/mapleapple.png">Maple Apple Pecan</option>
+                            <option value="../images/bun-graphics/walnuts.png">Walnut Bun</option>
+                            <option value="../images/bun-graphics/pumpkin.png">Pumpkin Spice</option>
+                            <option value="../images/bun-graphics/cranberry.png">Cranberry Bun</option>
+                            <option value="../images/bun-graphics/blackberry.png">Blackberry Bun</option>
+                            <option value="../images/bun-graphics/original.png">Original</option>
+                            <option value="../images/bun-graphics/glutenfree.png">Original (GF)</option>
+                            <option value="../images/bun-graphics/vegan.png">Original (V)</option>
+                            <option value="../images/bun-graphics/bacon.png">Bacon Roll</option>
+                            <option value="../images/bun-graphics/pecan.png">Caramel Pecan</option>
+                            <option value="../images/bun-graphics/strawberry.png">Strawberry Rhubarb</option>
+                            <option value="../images/bun-graphics/birthday.png">Birthday Cake</option>
+                            <option value="../images/bun-graphics/lemon.png">Lemon Tart</option>
+                            <option value="../images/bun-graphics/oldfashioned.png">Oldfashioned Buttermilk</option>
+                            <option value="../images/bun-graphics/carrots.png">Carrot Cake</option>
+                        </select>
+                    </div> 
+                </div>
+                <div class="choose-bun">
+                    <img name="imageToSwap3" src="../images/icons/bun.png">
+                    <div class="select">
+                        <span class="arr"></span>
+                        <select id="bun-select3">
+                            <option value="../images/icon/bun.png">Select flavor...</option>
+                            <option value="../images/bun-graphics/mapleapple.png">Maple Apple Pecan</option>
+                            <option value="../images/bun-graphics/walnuts.png">Walnut Bun</option>
+                            <option value="../images/bun-graphics/pumpkin.png">Pumpkin Spice</option>
+                            <option value="../images/bun-graphics/cranberry.png">Cranberry Bun</option>
+                            <option value="../images/bun-graphics/blackberry.png">Blackberry Bun</option>
+                            <option value="../images/bun-graphics/original.png">Original</option>
+                            <option value="../images/bun-graphics/glutenfree.png">Original (GF)</option>
+                            <option value="../images/bun-graphics/vegan.png">Original (V)</option>
+                            <option value="../images/bun-graphics/bacon.png">Bacon Roll</option>
+                            <option value="../images/bun-graphics/pecan.png">Caramel Pecan</option>
+                            <option value="../images/bun-graphics/strawberry.png">Strawberry Rhubarb</option>
+                            <option value="../images/bun-graphics/birthday.png">Birthday Cake</option>
+                            <option value="../images/bun-graphics/lemon.png">Lemon Tart</option>
+                            <option value="../images/bun-graphics/oldfashioned.png">Oldfashioned Buttermilk</option>
+                            <option value="../images/bun-graphics/carrots.png">Carrot Cake</option>
+                        </select>
+                    </div> 
+                </div>
+                <!-- Total and checkout -->
+                <div id="total">
+                    <h2>Total</h2>
+                    <div id="total-value">$40</div>
+                </div>
+                    <button class="add-to-cart" id="total-button">
+                        <h3>Add to Cart</h3>
+                        <img src="../images/icons/plus.png">
+                    </button>
+            </div>
+            
+        </article>
+<!-- Footer content -->
+        <!-- Social Media -->
+        <div id="social-media">
+            <h2>Connect with the Bun Bun Bake Shoppe</h2>
+            <ul>
+                <li><img src="../images/icons/facebook.png"></li>
+                <li><img src="../images/icons/instagram.png"></li>
+                <li><img src="../images/icons/twitter.png"></li>
+                <li><img src="../images/icons/pinterest.png"></li>
+            </ul>
+        </div>
+        <!-- Copyright -->
+        <div id="copyright">
+            <h4>© 2017 Zeeshan Rizvi LLC. All rights reserved.</h4>
+            <div>
+                <p>
+                    <em>LEGAL</em> | <em>PRIVACY POLICY</em> | <em>ANIMAL WELFARE</em> | <em>SITE MAP</em>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
